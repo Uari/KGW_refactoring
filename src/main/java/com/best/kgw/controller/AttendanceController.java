@@ -101,10 +101,9 @@ public class AttendanceController {
         return attendanceList;
     }
 
-    @Scheduled(cron = "59 59 23 ? * 1-5")
+    @Scheduled(cron = "57 59 23 ? * 1-5")
     public void run() throws Exception {
         try {
-            logger.info("아뭐냐고!!!!");
             attendanceService.attemdamceStateUpdate();
         }catch (Exception e) {
             // 예외 발생 시 로그 출력 또는 예외 처리 로직 추가

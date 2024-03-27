@@ -30,7 +30,6 @@ public class EmpService {
     @Scheduled(cron = "0 0 0 1 1 ?")
     public void firstOfYearTask() {
         try {
-            logger.info("되라제발!!!!");
             sqlSessionTemplate.update("updateYearDayoff_cnt");
         }catch (Exception e) {
             // 예외 발생 시 로그 출력 또는 예외 처리 로직 추가

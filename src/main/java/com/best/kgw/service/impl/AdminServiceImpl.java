@@ -60,10 +60,4 @@ public class AdminServiceImpl implements AdminSevice {
         result = adminDao.empInfoUpdate(empVO);
         return result;
     }
-
-
-
-
-
-
 }
